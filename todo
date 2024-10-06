@@ -1,0 +1,3 @@
+help on a command specifics
+exit command handler to print stats of the session
+previous command listener: have a history of commands, when clicking UP, show the command

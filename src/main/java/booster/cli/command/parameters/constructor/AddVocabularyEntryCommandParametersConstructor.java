@@ -1,9 +1,9 @@
 package booster.cli.command.parameters.constructor;
 
 import booster.cli.command.CliCommand;
-import booster.cli.command.parameters.impl.AddVocabularyEntryParameters;
 import booster.cli.command.parameters.CliCommandParameters;
 import booster.cli.command.parameters.flags.AddVocabularyEntryCommandFlags;
+import booster.cli.command.parameters.impl.AddVocabularyEntryParameters;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -26,7 +26,7 @@ class AddVocabularyEntryCommandParametersConstructor implements CliCommandParame
         int indexOfLastFlagValuePair = inputRemainder.substring(0, indexOfLastFlagSeparator).trim().lastIndexOf(' ');
 
         Map<String, String> unrecognized = new HashMap<>();
-        var builder = AddVocabularyEntryParameters.builder().command(CliCommand.ADD_VOCABULARY_ENTRY);
+        var builder = AddVocabularyEntryParameters.builder();
 
         String lastFlagValue = inputRemainder.substring(indexOfLastFlagSeparator + 1).trim();
 

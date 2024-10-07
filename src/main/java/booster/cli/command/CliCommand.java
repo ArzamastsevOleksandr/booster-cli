@@ -12,8 +12,19 @@ import java.util.Arrays;
 public enum CliCommand {
 
     HELP("h"),
+
     ADD_VOCABULARY_ENTRY("ave"),
+    LIST_VOCABULARY_ENTRIES("lve"),
+    PRACTICE_VOCABULARY("pv"),
+
+    ADD_NOTE("an"),
+    LIST_NOTES("ln"),
+
+    ADD_SETTINGS("as"),
+    SHOW_SETTINGS("ss"),
+
     EXIT("e"),
+
     EMPTY(""),
     UNRECOGNIZED("IRRELEVANT");
 

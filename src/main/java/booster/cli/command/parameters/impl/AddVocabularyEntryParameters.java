@@ -16,10 +16,14 @@ import java.util.Set;
 @ToString
 public class AddVocabularyEntryParameters implements CliCommandParameters {
 
-    private CliCommand command;
     private String word;
     private String description;
     private Integer correctAnswersCount;
     private Set<String> synonyms;
     private Map<String, String> unrecognized;
+
+    @Override
+    public CliCommand command() {
+        return CliCommand.ADD_VOCABULARY_ENTRY;
+    }
 }

@@ -10,7 +10,7 @@ class UnrecognizedCommandParametersConstructor implements CliCommandParametersCo
 
     @Override
     public CliCommandParameters construct(String input) {
-        return new UnrecognizedCommandParameters(command(), input);
+        return new UnrecognizedCommandParameters(input);
     }
 
     @Override

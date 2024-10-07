@@ -5,3 +5,10 @@ spring:
     banner-mode: off
   profiles:
     active: local
+
+settings:
+  vocabulary:
+    pagination: 2
+    practice-batch-size: 5
+  notes:
+    pagination: 1
